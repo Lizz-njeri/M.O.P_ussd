@@ -154,7 +154,7 @@ def ussd_callback():
 
     elif text == "1*1*1*1":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", ["+254714805460"])
+        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [sms_phone_number])
     elif text == "1*1*1*2":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
         #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
