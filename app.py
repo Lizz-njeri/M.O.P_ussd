@@ -81,7 +81,7 @@ def ussd_callback():
         response += "4. Thursday\n"
         response += "5. Friday\n"
     
-    elif text == "^2/*2(/*/d+)?$":
+    elif text == "^2\*2(\*\d+)?$":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
         #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
     # elif text == "2*2*2":
