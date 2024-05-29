@@ -53,9 +53,8 @@ def ussd_callback():
         response += "5. Friday\n"
 
     elif text == "1*2*1":
-        
         response = "END The realtor will send a message with the details"
-        sms.send("Available units are: Kawangware(2units @ Ksh. 5500), Jamhuri(3 units@Ksh. 8000), Ngong(2units @7500))", [phone_number])
+        #sms.send("Available units are: Kawangware(2units @ Ksh. 5500), Jamhuri(3 units@Ksh. 8000), Ngong(2units @7500))", [phone_number])
     
     elif text == "1*2*2":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
