@@ -53,24 +53,24 @@ def ussd_callback():
         response += "5. Friday\n"
 
     elif text == "1*2*1":
-        response = "END The realtor will send a message with the details"
-        #sms.send("Available units are: Kawangware(2units @ Ksh. 5500), Jamhuri(3 units@Ksh. 8000), Ngong(2units @7500))", [phone_number])
+        response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
     
     elif text == "1*2*2":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
     
     elif text == "1*2*3":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
     
     elif text == "1*2*4":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
     
     elif text == "1*2*5":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
        
 
     elif text == "2*2":
@@ -83,19 +83,19 @@ def ussd_callback():
     
     elif text == "2*2*1":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
     elif text == "2*2*2":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
     elif text == "2*2*3":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
     elif text == "2*2*4":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
     elif text == "2*2*5":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
 
     elif text =="2*1":
         response = "CON Which mental health condition have you been diagnosed?\n"
@@ -114,9 +114,24 @@ def ussd_callback():
         response += "4. Thursday\n"
         response += "5. Friday\n"
 
+    elif text == "1*1*2":
+        response = "CON Which day of the week do you want to book the appointment?\n"
+        response += "1. Monday\n"
+        response += "2. Tuesday\n"
+        response += "3. Wednesday\n"
+        response += "4. Thursday\n"
+        response += "5. Friday\n"
+
+    elif text == "1*1*3":
+        response = "CON Which day of the week do you want to book the appointment?\n"
+        response += "1. Monday\n"
+        response += "2. Tuesday\n"
+        response += "3. Wednesday\n"
+        response += "4. Thursday\n"
+        response += "5. Friday\n"
     elif text == "1*1*1*1":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
        
         
     else:
