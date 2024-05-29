@@ -152,7 +152,7 @@ def ussd_callback():
     #     response += "3. Wednesday\n"
     #     response += "4. Thursday\n"
     #     response += "5. Friday\n"
-    elif text == "1*1*1*1":
+    elif text == "1*1*1*1"or"1*1*2*1":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
         #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
        
