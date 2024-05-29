@@ -26,7 +26,7 @@ def ussd_callback():
         response += "2. Below 18 years\n"
 
     elif text== "1":
-        response = "CON Do you have a diagnosis for mental health"
+        response = "CON Do you have a diagnosis for mental health\n"
         response += "1. Yes\n"
         response += "2.No \n"
     
@@ -38,7 +38,7 @@ def ussd_callback():
         response += "4. Eating disorders\n"
         response += "5. PTSD\n"
         response += "6. Anxiety disorders\n"
-    elif text == "1*1*":
+    elif text == "1*1*1":
         response = "CON Which day of the week do you want to book the appointment?\n"
         response += "1. Monday\n"
         response += "2. Tuesday\n"
