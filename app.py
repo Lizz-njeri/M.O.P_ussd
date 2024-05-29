@@ -3,9 +3,8 @@ import africastalking
 import os
 
 app = Flask(__name__)
-username = "Kwepo"
-#api_key = "a03310048e89221dc881820003f85c38353bcae6e28c545fe190bd109ef5933a"
-api_key = "f41283f042c8a365b7800b6d599c2fe220be726ca9e7273303dfd8993e706379"
+username = "sandbox"
+api_key = "d8b30bd562e2750b2d9cb06b8a3bf74b2cb7f1bd5ac7440d0ec04b314623b49c"
 africastalking.initialize(username, api_key)
 
 @app.route('/', methods=['POST', 'GET'])
@@ -155,7 +154,7 @@ def ussd_callback():
 
     elif text == "1*1*1*1":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+        sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
     elif text == "1*1*1*2":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
         #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
