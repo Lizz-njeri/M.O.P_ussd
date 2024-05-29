@@ -3,8 +3,8 @@ import africastalking
 import os
 
 app = Flask(__name__)
-username = "sandbox"
-api_key = "d8b30bd562e2750b2d9cb06b8a3bf74b2cb7f1bd5ac7440d0ec04b314623b49c"
+username = "Kwepo"
+api_key = "f67c169248ae4bf36bdc9e798afed8428dcd3770bf78cf051d4faa752fd8a8a9"
 africastalking.initialize(username, api_key)
 
 @app.route('/', methods=['POST', 'GET'])
