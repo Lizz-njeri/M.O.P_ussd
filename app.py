@@ -38,7 +38,7 @@ def ussd_callback():
         response += "4. Eating disorders\n"
         response += "5. PTSD\n"
         response += "6. Anxiety disorders\n"
-    elif text == "1*1*1":
+    elif text == "1*1*1"&"1*1*2":
         response = "CON Which day of the week do you want to book the appointment?\n"
         response += "1. Monday\n"
         response += "2. Tuesday\n"
