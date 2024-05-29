@@ -20,7 +20,6 @@ def ussd_callback():
     sms_phone_number.append(phone_number)
     sms = africastalking.SMS
 
-    i=0
 
     if text == "":
         response = "CON Welcome to M.O.P Health.Which age bracket are you in?\n"
@@ -84,21 +83,21 @@ def ussd_callback():
         response += "5. Friday\n"
 
    
-    elif text == "2*2*i":
+    elif text == "2*2*1":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
         #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
-    # elif text == "2*2*2":
-    #     response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-    #     #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
-    # elif text == "2*2*3":
-    #     response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-    #     #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
-    # elif text == "2*2*4":
-    #     response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-    #     #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
-    # elif text == "2*2*5":
-    #     response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
-    #     #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+    elif text == "2*2*2":
+        response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+    elif text == "2*2*3":
+        response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+    elif text == "2*2*4":
+        response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
+    elif text == "2*2*5":
+        response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
+        #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
 
     elif text =="2*1":
         response = "CON Which mental health condition have you been diagnosed?\n"
@@ -109,7 +108,7 @@ def ussd_callback():
         response += "5. PTSD\n"
         response += "6. Anxiety disorders\n"
 
-    elif text == "1*1*1":
+    elif text == "1*1*1" or "1*1*2" or "1*1*3":
         response = "CON Which day of the week do you want to book the appointment?\n"
         response += "1. Monday\n"
         response += "2. Tuesday\n"
@@ -117,21 +116,42 @@ def ussd_callback():
         response += "4. Thursday\n"
         response += "5. Friday\n"
 
-    elif text == "1*1*2":
-        response = "CON Which day of the week do you want to book the appointment?\n"
-        response += "1. Monday\n"
-        response += "2. Tuesday\n"
-        response += "3. Wednesday\n"
-        response += "4. Thursday\n"
-        response += "5. Friday\n"
+    # elif text == "1*1*2":
+    #     response = "CON Which day of the week do you want to book the appointment?\n"
+    #     response += "1. Monday\n"
+    #     response += "2. Tuesday\n"
+    #     response += "3. Wednesday\n"
+    #     response += "4. Thursday\n"
+    #     response += "5. Friday\n"
 
-    elif text == "1*1*3":
-        response = "CON Which day of the week do you want to book the appointment?\n"
-        response += "1. Monday\n"
-        response += "2. Tuesday\n"
-        response += "3. Wednesday\n"
-        response += "4. Thursday\n"
-        response += "5. Friday\n"
+    # elif text == "1*1*3":
+    #     response = "CON Which day of the week do you want to book the appointment?\n"
+    #     response += "1. Monday\n"
+    #     response += "2. Tuesday\n"
+    #     response += "3. Wednesday\n"
+    #     response += "4. Thursday\n"
+    #     response += "5. Friday\n"
+    # elif text == "1*1*4":
+    #     response = "CON Which day of the week do you want to book the appointment?\n"
+    #     response += "1. Monday\n"
+    #     response += "2. Tuesday\n"
+    #     response += "3. Wednesday\n"
+    #     response += "4. Thursday\n"
+    #     response += "5. Friday\n"
+    # elif text == "1*1*5":
+    #     response = "CON Which day of the week do you want to book the appointment?\n"
+    #     response += "1. Monday\n"
+    #     response += "2. Tuesday\n"
+    #     response += "3. Wednesday\n"
+    #     response += "4. Thursday\n"
+    #     response += "5. Friday\n"
+    # elif text == "1*1*6":
+    #     response = "CON Which day of the week do you want to book the appointment?\n"
+    #     response += "1. Monday\n"
+    #     response += "2. Tuesday\n"
+    #     response += "3. Wednesday\n"
+    #     response += "4. Thursday\n"
+    #     response += "5. Friday\n"
     elif text == "1*1*1*1":
         response = "END Your appointment has been successfully booked. Details will be shared in a short while."    
         #sms.send("Your appointment was booked for Monday at 2pm with Dr. Rachel Mundia, Nairobi West Hospital", [phone_number])
